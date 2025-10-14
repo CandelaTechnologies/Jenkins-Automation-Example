@@ -1,0 +1,3 @@
+[submodule "lanforge-scripts"]
+	path = lanforge-scripts
+	url = https://github.com/greearb/lanforge-scripts.git
