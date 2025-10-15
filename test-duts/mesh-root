@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+DUT_NAME=Mesh-Root                # DUT Name (Set in report and in 'DUT' tab of GUI)
+
+DUT_MODEL_NUM=X.X.X               # DUT Model
+DUT_HW_VERSION=Y.Y.Y              # DUT hardware version
+DUT_SW_VERSION=Z.Z.Z              # DUT software version
+
+DUT_2G_SSID=204-mesh-ap           # 2.4GHz radio SSID
+DUT_2G_BSSID=38:f8:f6:82:ef:a4    # 2.4GHz radio BSSID
+DUT_2G_SECURITY=WPA2\|WPA3        # 2.4GHz radio security
+DUT_2G_PASSWORD=lanforge          # 2.4GHz radio password
+
+DUT_5G_SSID=204-mesh-ap           # 5GHz radio SSID
+DUT_5G_BSSID=38:f8:f6:82:ef:aa    # 5GHz radio BSSID
+DUT_5G_SECURITY=WPA2\|WPA3        # 5GHz radio security
+DUT_5G_PASSWORD=lanforge          # 5GHz radio password
+
+DUT_6G_SSID=204-mesh-ap           # 6GHz radio SSID
+DUT_6G_BSSID=38:f8:f6:82:ef:a6    # 6GHz radio BSSID
+DUT_6G_SECURITY=WPA3              # 6GHz radio security
+DUT_6G_PASSWORD=lanforge          # 6GHz radio password

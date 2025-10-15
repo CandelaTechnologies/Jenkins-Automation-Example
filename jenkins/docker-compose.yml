@@ -1,0 +1,20 @@
+services:
+  # Core Jenkins application
+  jenkins:
+    image: jenkins-lanforge:latest
+    container_name: jenkins
+    privileged: true
+    user: root
+    ports:
+      # https://www.jenkins.io/doc/book/security/services/
+      - 8080:8080    # Webserver
+      - 50000:50000  # TCP Agent listener
+    volumes:
+      - ${JENKINS_HOME_PATH}:/var/jenkins_home
+      # Permit Jenkins to run Docker containers from within its container
+      # Be mindful here, as there may be security concerns with this approach
+      #- /var/run/docker.sock:/var/run/docker.sock
+      #- /usr/bin/docker:/usr/bin/docker
+      #- /usr/libexec/docker:/usr/libexec/docker
+    environment:
+      - TZ=America/Denver
